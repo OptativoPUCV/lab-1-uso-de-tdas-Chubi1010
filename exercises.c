@@ -45,13 +45,9 @@ List* crea_lista() {
    List* L = create_list();
    for (size_t k = 1; k <= 10; k++) {
       int *num = (int*)malloc(sizeof(int)); 
-      if (num == NULL) { 
-         exit(1);
-      }
       *num = k;
       pushBack(L, num);
    }
-   imprime_lista(L);
    return L;
 }
 
